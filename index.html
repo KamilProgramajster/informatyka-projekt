@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bezpieczeństwo i Potencjał AI</title>
     <style>
-        /* PODSTAWOWE USTAWIENIA */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #05070a;
@@ -14,7 +13,6 @@
             line-height: 1.6;
         }
 
-        /* NAWIGACJA */
         header {
             border-bottom: 1px solid #161b22;
             padding: 20px 40px;
@@ -35,14 +33,12 @@
 
         .logo span { color: #3b82f6; }
 
-        /* GŁÓWNY KONTENER */
         .container { 
             max-width: 1000px; 
             margin: 0 auto; 
             padding: 40px 20px; 
         }
 
-        /* SEKCJA POWITALNA */
         .hero { 
             margin-bottom: 60px; 
             text-align: left;
@@ -63,7 +59,6 @@
             max-width: 700px; 
         }
 
-        /* OBRAZ GŁÓWNY */
         .main-image-box {
             margin-bottom: 60px;
             border-radius: 12px;
@@ -71,7 +66,8 @@
             border: 1px solid #161b22;
         }
 
-        .main-image-box img { 
+        .main-image-box img,
+        .main-image-box video { 
             width: 100%; 
             height: auto; 
             display: block; 
@@ -85,7 +81,6 @@
             border-top: 1px solid #161b22;
         }
 
-        /* TYTUŁY SEKCJI */
         .label {
             color: #3b82f6;
             text-transform: uppercase;
@@ -97,7 +92,6 @@
             display: block;
         }
 
-        /* UKŁAD KAFELKOWY */
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -124,7 +118,6 @@
             font-size: 15px;
         }
 
-        /* ETYKIETY STATUSU */
         .status {
             display: inline-block;
             padding: 5px 10px;
@@ -138,7 +131,6 @@
         .status-warn { background: rgba(59, 130, 246, 0.1); color: #60a5fa; }
         .status-alert { background: rgba(239, 68, 68, 0.1); color: #f87171; }
 
-        /* SEKCJA ANALIZY RYZYKA */
         .risk-box {
             background: #0d1117;
             border: 1px solid #161b22;
@@ -156,7 +148,6 @@
         .risk-item h4 { color: #f8fafc; margin-bottom: 10px; }
         .risk-item p { color: #8b949e; font-size: 14px; margin: 0; }
 
-        /* SEKCJA PROTOKOŁU */
         .protocol-box {
             background: #0d1117;
             border-left: 4px solid #3b82f6;
@@ -182,7 +173,6 @@
             margin-bottom: 10px;
         }
 
-        /* STOPKA */
         footer {
             margin-top: 80px;
             padding: 40px 0;
@@ -191,131 +181,46 @@
             font-size: 14px;
         }
 
-        /* RESPONSYWNOŚĆ */
         @media (max-width: 768px) {
-            .step-list, .risk-grid { grid-template-columns: 1fr; flex-direction: column; }
+            .step-list, .risk-grid { 
+                grid-template-columns: 1fr; 
+                flex-direction: column; 
+            }
             .hero h1 { font-size: 35px; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">AI<span>BEZPIECZNIK</span></div>
-        <div class="tag">Praca na informatyke</div>
-    </header>
+<header>
+    <div class="logo">AI<span>BEZPIECZNIK</span></div>
+    <div class="tag">Praca na informatyke</div>
+</header>
 
-    <div class="container">
-        
-        <div class="hero">
-            <span class="label">Analiza techniczna</span>
-            <h1>AI to narzędzie, <span>nie wyrocznia.</span></h1>
-            <p>Krótko, prosto i na temat: jak nie dać się oszukać w świecie, w którym obraz i głos można łatwo podrobić.</p>
-        </div>
-
-        <div class="main-image-box">
-            <video controls><source src="/workspaces/informatyka-projekt/Messenger_creation_87F5F408-6B79-49A7-9C97-BB2E6641466C.mp4" type="video/mp4></video>
-            <div class="caption">Wizualizacja struktur neuronowych. Pamiętaj: AI nie myśli, AI oblicza prawdopodobieństwo.</div>
-        </div>
-
-        <span class="label">Dlaczego warto korzystać z AI?</span>
-        <div class="row">
-            <div class="column">
-                <h3>Szybsza nauka</h3>
-                <p>AI potrafi streścić książkę lub wyjaśnić trudne pojęcie w prostych słowach. To Twój osobisty korepetytor dostępny 24/7.</p>
-                <div class="status status-ok">ZALETA: OSZCZĘDNOŚĆ CZASU</div>
-            </div>
-            <div class="column">
-                <h3>Pomoc w pracy</h3>
-                <p>Pisanie maili, sprawdzanie błędów w kodzie czy tworzenie planów treningowych. AI zdejmuje z Ciebie nudne zadania.</p>
-                <div class="status status-ok">ZALETA: EFEKTYWNOŚĆ</div>
-            </div>
-            <div class="column">
-                <h3>Analiza danych</h3>
-                <p>Szybkie wyciąganie wniosków z długich raportów. Pozwala zrozumieć kluczowe punkty dokumentu w kilka sekund.</p>
-                <div class="status status-ok">ZALETA: ANALITYKA</div>
-            </div>
-            <div class="column">
-                <h3>Kreatywność</h3>
-                <p>Generowanie pomysłów na projekty, teksty czy grafiki. Pomaga przełamać "blokadę twórczą" na starcie pracy.</p>
-                <div class="status status-ok">ZALETA: INSPIRACJA</div>
-            </div>
-        </div>
-
-        <span class="label">Zagrożenia i pułapki</span>
-        <div class="row">
-            <div class="column">
-                <h3>Kradzież tożsamości</h3>
-                <p>Oszuści mogą podrobić Twój głos na podstawie krótkiego nagrania z sieci, by wyłudzić pieniądze od Twoich bliskich.</p>
-                <div class="status status-alert">RYZYKO: DEEPFAKE AUDIO</div>
-            </div>
-            <div class="column">
-                <h3>Prywatność danych</h3>
-                <p>Wszystko, co wpisujesz do czatów AI, staje się częścią ich bazy. Nigdy nie podawaj tam haseł ani danych klientów.</p>
-                <div class="status status-warn">RYZYKO: WYCIEK DANYCH</div>
-            </div>
-            <div class="column">
-                <h3>Halucynacje</h3>
-                <p>AI często zmyśla fakty z dużą pewnością siebie. Brak weryfikacji może prowadzić do powielania kłamstw.</p>
-                <div class="status status-warn">RYZYKO: BŁĘDNE DANE</div>
-            </div>
-            <div class="column">
-                <h3>Manipulacja obrazem</h3>
-                <p>Deepfake wideo pozwala tworzyć fałszywe wypowiedzi osób publicznych, promujące oszustwa finansowe.</p>
-                <div class="status status-alert">RYZYKO: DEEPFAKE WIDEO</div>
-            </div>
-        </div>
-
-        <span class="label">Jak bezpiecznie wdrażać AI?</span>
-        <div class="risk-box">
-            <div class="risk-grid">
-                <div class="risk-item">
-                    <h4>Prywatność przez design</h4>
-                    <p>Używaj trybów prywatnych w narzędziach AI, które nie wykorzystują danych do dalszego treningu modeli.</p>
-                </div>
-                <div class="risk-item">
-                    <h4>Weryfikacja merytoryczna</h4>
-                    <p>Każdą informację krytyczną sprawdzaj w co najmniej dwóch niezależnych i zaufanych źródłach.</p>
-                </div>
-                <div class="risk-item">
-                    <h4>Etyczne wykorzystanie</h4>
-                    <p>Zawsze informuj odbiorców, jeśli dana treść została wygenerowana lub znacznie zmodyfikowana przez AI.</p>
-                </div>
-                <div class="risk-item">
-                    <h4>Ograniczone zaufanie</h4>
-                    <p>Uważaj na darmowe wtyczki AI do przeglądarek – często są one przykrywką dla programów szpiegujących.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="protocol-box">
-            <h2>Standard ochrony</h2>
-            <p>Zastosuj te proste zasady, aby czuć się bezpiecznie:</p>
-            
-            <div class="step-list">
-                <div class="step-item">
-                    <span>KROK 01</span>
-                    <h4>Sprawdź źródło</h4>
-                    <p>Jeśli "znajomy" prosi o kod BLIK przez komunikator, zadzwoń do niego i potwierdź to głosowo.</p>
-                </div>
-                <div class="step-item">
-                    <span>KROK 02</span>
-                    <h4>Hasło rodzinne</h4>
-                    <p>Ustal z rodziną jedno słowo, którego użyjecie tylko w sytuacjach kryzysowych, by potwierdzić tożsamość.</p>
-                </div>
-                <div class="step-item">
-                    <span>KROK 03</span>
-                    <h4>Weryfikuj fakty</h4>
-                    <p>AI często kłamie. Zawsze sprawdzaj ważne informacje w Google lub na oficjalnych stronach rządowych.</p>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            Realizacja Kamil 3B
-        </footer>
+<div class="container">
+    
+    <div class="hero">
+        <span class="label">Analiza techniczna</span>
+        <h1>AI to narzędzie, <span>nie wyrocznia.</span></h1>
+        <p>Krótko, prosto i na temat: jak nie dać się oszukać w świecie, w którym obraz i głos można łatwo podrobić.</p>
     </div>
 
-</body>
+    <div class="main-image-box">
+        <video controls>
+            <source src="Messenger_creation_87F5F408-6B79-49A7-9C97-BB2E6641466C.mp4" type="video/mp4">
+            Twoja przeglądarka nie obsługuje wideo.
+        </video>
+        <div class="caption">
+            Wizualizacja struktur neuronowych. Pamiętaj: AI nie myśli, AI oblicza prawdopodobieństwo.
+        </div>
+    </div>
 
+    <footer>
+        Realizacja Kamil 3B
+    </footer>
+
+</div>
+
+</body>
 </html>
+
